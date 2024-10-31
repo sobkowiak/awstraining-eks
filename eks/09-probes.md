@@ -13,7 +13,7 @@ kubectl run test -it --rm --restart Never --image docker.io/redhat/ubi9 -- bash
 Type following command in the container termnal
 
 ```
-while true; do curl person-service:8080/hello; done;
+while true; do curl person-service:8080/hello; echo '\n'; done;
 ```
 
 You should see the answer from the `/hello` service:
